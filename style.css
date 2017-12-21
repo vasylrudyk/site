@@ -1,0 +1,61 @@
+body{
+	background: #2c2c2d;
+	padding: 0px;
+}
+ul{
+	display: block;
+	padding: 0px;
+	margin-left:0px;
+}
+ul:after{
+	display: block;
+	content: "";
+	clear: both;
+	float: none;
+}
+ul.menu li{
+	float: left;
+	position: relative;
+
+}
+ul.menu li a{
+	display: block;
+	padding: 10px;
+	color: white;
+	background: black;
+	border: white;
+	transition: .3s;
+	text-decoration: none;
+	text-shadow: 0 0 15px aqua; 
+}
+ul.menu li a:hover{
+	background: #2d9b17;
+	border-radius: 10px;
+}
+ul.submenu{
+	display: none;
+	position: absolute;
+	color: black;
+	top:37px;
+	left: 0px;
+	    
+}
+ul.submenu > li {
+    display: block;
+}
+ul.submenu > li > a {
+    display: block;
+    padding: 10px;
+    color: white;
+    background: #2d9b17;
+    text-decoration: none;
+}
+ul.submenu > li > a:hover {
+	background: blue;
+    text-decoration: underline;
+    padding: 12px;
+    margin: 2px;
+}
+ul.menu > li:hover > ul.submenu {
+    display: block;
+}
